@@ -1,8 +1,10 @@
 .PHONY: fsql clean install lint
 
+SOURCES:=$(wildcard **/*.go)
+
 all: fsql
 
-fsql:
+fsql: $(SOURCES)
 	go build -o ./fsql -v .
 
 clean:
