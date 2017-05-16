@@ -1,5 +1,7 @@
 # fsql
 
+[![Build Status](https://travis-ci.org/klingtnet/fsql.svg?branch=master)](https://travis-ci.org/klingtnet/fsql)
+
 >Search through your file system with SQL-esque queries.
 
 - [Demo](#demo)
