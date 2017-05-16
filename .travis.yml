@@ -1,0 +1,20 @@
+language: go
+sudo: required
+go:
+  - 1.8
+  - tip
+os:
+  - linux
+  - osx
+matrix:
+  allow_failures:
+    - go: tip
+  fast_finish: true
+install:
+  - go get github.com/kshvmdn/fsql
+jobs:
+  include:
+    - stage: build
+      script: make
+    - stage: test
+      script: make test
