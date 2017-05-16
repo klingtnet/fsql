@@ -17,4 +17,4 @@ lint:
 	${GOPATH}/bin/golint . query compare
 
 test: fsql
-	go test
+	go test github.com/kshvmdn/fsql/...
